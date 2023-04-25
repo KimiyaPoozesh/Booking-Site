@@ -27,7 +27,7 @@ body {
   width: 100%;
   max-width: 380px;
   padding: 80px 40px 40px;
-  background: #263A29;
+  background: #41644A;
   border-radius: 10px;
   color: #fff;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
@@ -40,7 +40,7 @@ body {
   left: 0;
   width: 50%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.023);
   transform: skewX(-26deg);
   transform-origin: bottom left;
   border-radius: 10px;
@@ -60,8 +60,10 @@ body {
   text-align: center;
   letter-spacing: 1px;
   margin-bottom: 2rem;
-  color: #ff652f;
+  color: #E86A33;
 }
+
+
 
 .form .input-group {
   position: relative;
@@ -93,7 +95,7 @@ body {
 .form .input-group input:focus + label,
 .form .input-group input:valid + label {
   transform: translateY(-18px);
-  color: #ff652f;
+  color: #E86A33;
   font-size: 0.8rem;
 }
 
@@ -102,7 +104,7 @@ body {
   margin: 20px auto 30px;
   border: none;
   outline: none;
-  background: #ff652f;
+  background: #E86A33;
   font-family: MyFont;
   font-size: 1.75rem;
   letter-spacing: 1px;
@@ -121,7 +123,7 @@ body {
   font-size: 1.25rem;
 }
 .forgot-pw:hover {
-  color: #ff652f;
+  color: #E86A33;
   transition: .5s;
 }
 #forgot-pw {
