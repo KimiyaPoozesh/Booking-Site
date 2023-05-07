@@ -1,0 +1,35 @@
+.imagebg {
+  background-image: url(../img/1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+
+.login{
+  position: absolute;
+  top: 20%;
+
+  right:0.5%;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color:azure;
+}
+
+.navbar-nav .nav-link {
+  font-size: 22px;
+  margin-right: 50px;
+  margin-top: 0px;
+}
+@media screen and (max-width: 760px) {
+  .logo {
+    font-size: 3px;
+  }
+  .imagebg {
+    height: 20vh;
+  }
+}

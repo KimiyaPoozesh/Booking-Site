@@ -1,7 +1,7 @@
 /* General Styles */
 @font-face {
   font-family: MyFont;
-  src: url('Caveat-VariableFont_wght.ttf');
+  src: url("Caveat-VariableFont_wght.ttf");
 }
 
 * {
@@ -27,14 +27,14 @@ body {
   width: 100%;
   max-width: 380px;
   padding: 80px 40px 40px;
-  background: #41644A;
+  background: #41644a;
   border-radius: 10px;
   color: #fff;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
 }
 
 .form::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -60,10 +60,8 @@ body {
   text-align: center;
   letter-spacing: 1px;
   margin-bottom: 2rem;
-  color: #E86A33;
+  color: #e86a33;
 }
-
-
 
 .form .input-group {
   position: relative;
@@ -95,7 +93,7 @@ body {
 .form .input-group input:focus + label,
 .form .input-group input:valid + label {
   transform: translateY(-18px);
-  color: #E86A33;
+  color: #e86a33;
   font-size: 0.8rem;
 }
 
@@ -104,7 +102,7 @@ body {
   margin: 20px auto 30px;
   border: none;
   outline: none;
-  background: #E86A33;
+  background: #e86a33;
   font-family: MyFont;
   font-size: 1.75rem;
   letter-spacing: 1px;
@@ -113,8 +111,8 @@ body {
   cursor: pointer;
 }
 
-.submit-btn:hover{
-  color: #F2E3DB;
+.submit-btn:hover {
+  color: #f2e3db;
   transition: 1s;
 }
 
@@ -123,8 +121,8 @@ body {
   font-size: 1.25rem;
 }
 .forgot-pw:hover {
-  color: #E86A33;
-  transition: .5s;
+  color: #e86a33;
+  transition: 0.5s;
 }
 #forgot-pw {
   position: absolute;
@@ -146,14 +144,14 @@ body {
   .form {
     padding: 40px;
   }
-  
+
   .form::before {
     width: 100%;
     height: 50%;
     transform: skewY(-26deg);
     transform-origin: top left;
   }
-  
+
   .form img {
     top: -10px;
   }
@@ -163,25 +161,25 @@ body {
   .form {
     padding: 40px 20px;
   }
-  
+
   .form::before {
     display: none;
   }
-  
+
   .form img {
     top: -20px;
     left: calc(50% - 25px);
     width: 50px;
   }
-  
+
   .form h2 {
     font-size: 1.5rem;
   }
-  
+
   .form .input-group input {
     font-size: 0.9rem;
   }
-  
+
   .submit-btn {
     font-size: 0.9rem;
     padding: 8px 16px;
