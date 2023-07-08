@@ -1,3 +1,7 @@
+
+const backButton = document.querySelector('.back');
+
+
 function validateForm() {
     // Get the form inputs
     var emailOrPhoneInput = document.getElementById("inputField");
@@ -21,4 +25,10 @@ function validateForm() {
     // If all validations pass, submit the form
     return true;
   }
+
+  backButton.addEventListener('click', () => {
+    window.history.back();
+    
+  });
+  
   

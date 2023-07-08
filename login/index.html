@@ -8,6 +8,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="style.css" />
     <link
@@ -18,13 +22,55 @@
     />
   </head>
   <body>
-    <div class="login-wrapper">
+    <nav
+      class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top shadow rounded-bottom"
+    >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="navbarNavAltMarkup"
+      >
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <div class="d-flex flex-column align-items-center">
+                <i class="bx bxs-invader" style="font-size: 50px"></i>
+                <!-- <span>Welcome</span> -->
+              </div>
+            </a>
+          </li>
+          <li class="back">
+            <div
+              class="button-row"
+              style="display: flex; align-items: center"
+            >
+              <button type="button" class="btn btn-outline-secondary mx-2">
+                <i class="bx bx-arrow-back"></i>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="login-wrapper" style="margin:2rem">
       <form action="" class="form">
         <img src="img/bxs-user-circle.svg" alt="" />
-        <h1>LOGIN</h1>
+        <h1>Welcome</h1>
         <div class="input-group">
           <input type="text" name="loginUser" id="inputField" required />
-          <label for="loginUser">Number or Email </label>
+          <label for="loginUser">E-Mail or Phone Number </label>
         </div>
         <div class="input-group">
           <input
@@ -35,7 +81,7 @@
           />
           <label for="loginPassword">Password </label>
         </div>
-        <input type="submit" value="Login" class="submit-btn" />
+        <button class="submit-btn">Login</button>
         <a href="#forgot-pw" class="forgot-pw">Forgot Password?</a>
       </form>
     </div>

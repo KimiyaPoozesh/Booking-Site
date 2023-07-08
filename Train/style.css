@@ -22,7 +22,7 @@
 }
 
 .imagebg {
-  background-image: url(../img/plane.jpg);
+  background-image: url(../img/train3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -68,6 +68,10 @@ h4 {
     height: 20vh;
   }
 }
+.bg-container{
+  background: rgb(27,6,42);
+  background: linear-gradient(90deg, rgba(27,6,42,1) 0%, rgba(60,17,78,1) 45%, rgba(38,8,56,1) 71%);
+}
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -109,14 +113,9 @@ form {
   padding: 2rem 4rem;
   border-radius: 2rem;
   margin-top: 2rem;
-  background: rgb(93, 9, 121);
-  background: linear-gradient(
-    90deg,
-    rgba(93, 9, 121, 0.75) 0%,
-    rgba(113, 5, 183, 1) 46%,
-    rgba(85, 0, 255, 0.75) 100%
-  );
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  background: rgb(40,12,54);
+  background: linear-gradient(90deg, rgba(40,12,54,.75) 0%, rgba(42,11,55,.75) 45%);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);;
 }
 #passengers {
   margin: 0.5rem;

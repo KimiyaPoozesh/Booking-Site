@@ -1,18 +1,28 @@
+
 /* General Styles */
 @font-face {
-  font-family: MyFont;
-  src: url("Caveat-VariableFont_wght.ttf");
-}
+  font-family: "Kimiya";
+  src: url("../css/Caveat-VariableFont_wght.ttf") format("truetype");
 
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'kimiya';
+  font-weight: bold;
+}
+
+.back{
+  position: absolute;
+  top: 20%;
+
+  left: 0.5%;
 }
 
 body {
   background-size: cover;
-  font-family: MyFont;
+  background-color: #f0e4fa !important;
 }
 
 .login-wrapper {
@@ -23,13 +33,15 @@ body {
 }
 
 .form {
+  text-align: center;
   position: relative;
   width: 100%;
   max-width: 380px;
   padding: 80px 40px 40px;
-  background: #41644a;
+  background: rgb(90,20,159);
+  background: linear-gradient(-45deg, rgba(90,20,159,0.75) 0%, rgba(127,52,158,0.75) 50%, rgba(90,20,159,1) 100%);
   border-radius: 10px;
-  color: #fff;
+  color: #45CFDD;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
 }
 
@@ -60,7 +72,7 @@ body {
   text-align: center;
   letter-spacing: 1px;
   margin-bottom: 2rem;
-  color: #e86a33;
+  color: #45CFDD;
 }
 
 .form .input-group {
@@ -87,13 +99,13 @@ body {
   padding: 10px 0;
   font-size: 1.25rem;
   pointer-events: none;
-  transition: 0.3s ease-out;
+  transition: 0.1s ease-out;
 }
 
 .form .input-group input:focus + label,
 .form .input-group input:valid + label {
   transform: translateY(-18px);
-  color: #e86a33;
+  color: #fff;
   font-size: 0.8rem;
 }
 
@@ -102,18 +114,17 @@ body {
   margin: 20px auto 30px;
   border: none;
   outline: none;
-  background: #e86a33;
-  font-family: MyFont;
+  background: #45CFDD;
+  font-family: 'kimiya';
   font-size: 1.75rem;
-  letter-spacing: 1px;
-  padding: 10px 20px;
-  border-radius: 20px;
+  padding: 1.4rem 2.4rem;
+  border-radius: 1.5rem;
   cursor: pointer;
+  transition: color .3s;
 }
 
 .submit-btn:hover {
   color: #f2e3db;
-  transition: 1s;
 }
 
 .forgot-pw {
@@ -121,8 +132,9 @@ body {
   font-size: 1.25rem;
 }
 .forgot-pw:hover {
-  color: #e86a33;
-  transition: 0.5s;
+  color: #fff;
+  transition: 0.4s;
+  text-decoration: none;
 }
 #forgot-pw {
   position: absolute;
@@ -136,7 +148,7 @@ body {
   z-index: 1;
   background: #fff;
   opacity: 0;
-  transition: 0.6s;
+  transition: 0.3s;
 }
 
 /* Media Queries */

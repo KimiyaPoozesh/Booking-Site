@@ -8,8 +8,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
-    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -18,15 +21,56 @@
     />
   </head>
   <body>
-    <div class="login-wrapper">
-      <form action="" class="form">
+    <nav
+      class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top shadow rounded-bottom"
+    >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="navbarNavAltMarkup"
+      >
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="back">
+            <div
+              class="button-row"
+              style="display: flex; align-items: center"
+            >
+              <button type="button" class="btn btn-outline-secondary mx-2">
+                <i class="bx bx-arrow-back"></i>
+              </button>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <div class="d-flex flex-column align-items-center">
+                <i class="bx bxs-invader" style="font-size: 50px"></i>
+                <!-- <span>Welcome</span> -->
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="login-wrapper" style="margin-top:2rem">
+      <form action="" class="form" id="signup-form">
         <h1>Sign Up</h1>
         <div class="input-group">
-          <input type="text" name="phoneNumber" id="phoneNumber" required />
+          <input type="number" name="phoneNumber" id="phoneNumber" required />
           <label for="phoneNumber">Phone Number</label>
         </div>
         <div class="input-group">
-          <input type="text" name="email" id="email" required />
+          <input type="email" name="email" id="email" required />
           <label for="email">Email</label>
         </div>
         <div class="input-group">
@@ -43,7 +87,7 @@
           <label for="passwordConfirmation">Confirm Password</label>
         </div>
         <p style="color: #ffff" id="strength"></p>
-        <input type="submit" value="Sign Up" class="submit-btn" />
+        <button class="submit-btn">Sign Up</button>
       </form>
     </div>
     <script src="script.js"></script>
@@ -62,5 +106,14 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const form = document.getElementById('signup-form');
+      form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        // Perform form validation and submit to server here
+        // If sign-up is successful, redirect to local HTML page using window.location.href
+        window.location.href = '../Profile/index.html';
+      });
+    </script>
   </body>
 </html>

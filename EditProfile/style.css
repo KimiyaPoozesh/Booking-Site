@@ -1,0 +1,46 @@
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #fbc2eb;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(251, 194, 235, 1),
+    rgb(225, 166, 238)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to right,
+    rgba(251, 194, 235, 1),
+    rgba(166, 193, 238, 1)
+  );
+}
+.back {
+  position: absolute;
+  top: 20%;
+
+  left: 0.5%;
+}
+
+.card-header {
+  background-color: rgb(53, 51, 51) !important;
+  color: #ffffff;
+  text-align: center;
+}
+
+.btn-primary {
+    padding: 1rem 3rem 1rem 3rem !important;
+    background-color: rgb(168, 36, 244) !important;
+    border-radius: 2rem !important;
+    border: none!important;
+    transition: background-color 1s, border-color 1s, color 1s !important;
+    font-family: "Kimiya", sans-serif !important;
+    margin-top: 1.5rem !important;
+    margin: auto !important;
+  }
+  .btn:hover {
+    background-color: rgb(177, 177, 224)!important;
+    border-color: rgb(177, 177, 224)!important;
+    color: #fff!important;
+  }
