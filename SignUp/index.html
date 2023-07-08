@@ -41,15 +41,12 @@
       >
         <!-- Links -->
         <ul class="navbar-nav">
-          <li class="back">
-            <div
-              class="button-row"
-              style="display: flex; align-items: center"
-            >
-              <button type="button" class="btn btn-outline-secondary mx-2">
-                <i class="bx bx-arrow-back"></i>
+          <li  class="back">
+            <div class="button-row" style="display: flex; align-items: center">
+              <button type="button" onclick="window.history.back();" class="btn btn-outline-secondary mx-2">
+                <i class='bx bx-arrow-back'></i>
               </button>
-            </div>
+              </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
@@ -87,7 +84,7 @@
           <label for="passwordConfirmation">Confirm Password</label>
         </div>
         <p style="color: #ffff" id="strength"></p>
-        <button class="submit-btn">Sign Up</button>
+        <button class="submit-btn" onclick="location.href='../profile/index.html'">Sign Up</button>
       </form>
     </div>
     <script src="script.js"></script>

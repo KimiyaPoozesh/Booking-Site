@@ -46,7 +46,7 @@
           <ul class="navbar-nav">
           
             <li class="nav-item">
-              <a class="nav-link disabled" href="../Plane/index.html">
+              <a class="nav-link " href="../Plane/index.html">
                 <div class="d-flex flex-column align-items-center">
                   <i class="bx bxs-plane-alt"></i>
                   <span>Plane</span>
@@ -54,7 +54,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../Train/index.html">
+              <a class="nav-link " href="../Train/index.html">
                 <div class="d-flex flex-column align-items-center">
                   <i class="bx bx-train"></i>
                   <span>Train</span>
@@ -62,7 +62,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../hotel/index.html">
+              <a class="nav-link disabled" href="../hotel/index.html">
                 <div class="d-flex flex-column align-items-center">
                   <i class="bx bxs-hotel"></i>
                   <span>Hotel</span>
@@ -97,46 +97,45 @@
       </nav>
       <div class="bg-container">
         <div class="container">
-          <h1>Flight form</h1>
+          <h1>Hotel Reservation</h1>
           <h4>
-            Discover your next dream destination by choosing the flight you
-            want. (Click on the flight for more detail)
+            Spend Quality Holidays With Us.
           </h4>
           <div class="row justify-content-center">
-            <form class="form-inline filter id="flight-form">
+            <form class="form-inline filter">
               <div class="form-group -mr2">
-                <label for="startDate" class="mr-2">Start Date:</label>
-                <input type="date" class="form-control" id="startDate" />
+                <label for="startDate" class="mr-2">Arrival Date:</label>
+                <input type="date" class="form-control" id="arrivaldate" />
               </div>
               <div class="form-group mr-2">
-                <label for="returnDate" class="mr-2">Return Date:</label>
-                <input type="date" class="form-control" id="returnDate" />
+                <label for="returnDate" class="mr-2">Departure Date:</label>
+                <input type="date" class="form-control" id="departuredate" />
               </div>
               <div class="form-group mr-2">
-                <label for="destination" class="mr-2">Destination:</label>
-                <select class="form-control" id="destination">
-                  <option>New York</option>
-                  <option>London</option>
-                  <option>Paris</option>
-                  <option>Tokyo</option>
+                <label for="destination" class="mr-2">Country:</label>
+                <select class="form-control" id="Country">
+                  <option>Canada</option>
+                  <option>Russia</option>
+                  <option>France</option>
+                  <option>United States</option>
                 </select>
               </div>
               <div class="form-group mr-2">
-                <label for="startCity" class="mr-2">Start City:</label>
-                <select class="form-control" id="startCity">
-                  <option>Los Angeles</option>
-                  <option>Miami</option>
-                  <option>Chicago</option>
+                <label for="startCity" class="mr-2">City name:</label>
+                <select class="form-control" id="Cityname">
+                  <option>Paris</option>
+                  <option>Toronto</option>
+                  <option>Moscow</option>
                   <option>San Francisco</option>
                 </select>
               </div>
               <!-- Number of passengers input -->
               <div class="form-group mb-0 mx-auto">
-                <label id="passengers">Passengers:</label>
+                <label id="passengers">Family size:</label>
                 <input
                   type="number"
                   class="form-control"
-                  id="passengers"
+                  id="Familysize"
                   value="1"
                   min="1"
                 />
@@ -145,37 +144,36 @@
               <!-- Submit button -->
             </form>
           </div>
-          <div class="Table-detail">
+          <div style="overflow-x: auto">
             <table class="table">
               <tr>
-                <th>From</th>
-                <th>To</th>
-                <th>Airline</th>
+                <th>City name</th>
                 <th>Arrival time</th>
                 <th>Departure time</th>
-                <th>Passengers</th>
-                <th>Gate no.</th>
-                <th>Flight no.</th>
-                <th>is VIP?</th>
+                <th>Family size</th>
                 <th>Price</th>
-                
               </tr>
               <tr>
-                <td>Tehran</td>
-                <td>Paris</td>
-                <td>iran Air</td>
-                <td>23/11</td>
-                <td>25/11</td>
+                <td>Moscow</td>
+                <td>03/07</td>
+                <td>17/07</td>
                 <td>5</td>
-                <td>B2</td>
-                <td>33</td>
-                <td>No</td>
-                <td>800$</td>
+                <td>800$/per day</td>
+                <td>
+                 
+                  <br />
+                 
+                </td>
+                <td>
+                  
+                  <br />
+                  
+                </td>
                 <td>
                   <div class="details" style="display: none">
                     <p>
-                      Flight number: 33 <br />
-                      Terminal: B2
+                      Hotel name : Four seasons hotel <br />
+                      Room capacity : 5
                     </p>
                     <button
                       class="form-button choose"
@@ -187,21 +185,25 @@
                 </td>
               </tr>
               <tr>
-                <td>Mashhad</td>
-                <td>Shiraz</td>
-                <td>Ata</td>
-                <td>09/06</td>
-                <td>10/06</td>
+                <td>Paris</td>
+                <td>03/07</td>
+                <td>17/07</td>
                 <td>3</td>
-                <td>A10</td>
-                <td>32</td>
-                <td>No</td>
-                <td>976$</td>
+                <td>600$/per day</td>
+                <td>
+                 <br />
+                  
+                </td>
+                <td>
+                  
+                  <br />
+                  
+                </td>
                 <td>
                   <div class="details" style="display: none">
                     <p>
-                      Flight number: 32 <br />
-                      Terminal: A10
+                      Hotel name : Ritz paris <br />
+                      Room capacity : 3
                     </p>
                     <button
                       class="form-button choose"
@@ -214,21 +216,26 @@
                 </td>
               </tr>
               <tr>
-                <td>Esfahan</td>
-                <td>Dubai</td>
-                <td>Caspian</td>
-                <td>23/09</td>
-                <td>29/09</td>
-                <td>2</td>
-                <td>66</td>
-                <td>C3</td>
-                <td>Yes</td>
-                <td>1700$</td>
+                <td>Toronto</td>
+                <td>03/07</td>
+                <td>17/07</td>
+                <td>7</td>
+                <td>900$/per day</td>
+                <td>
+                  
+                  <br />
+                 
+                </td>
+                <td>
+                 
+                  <br />
+                  
+                </td>
                 <td>
                   <div class="details" style="display: none">
                     <p>
-                      Flight number: 66 <br />
-                      Terminal: C3
+                      Hotel name : Sheraton centre <br />
+                      Room capacity : 7
                     </p>
                     <button
                       class="form-button choose"

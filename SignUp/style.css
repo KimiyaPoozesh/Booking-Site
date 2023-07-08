@@ -173,10 +173,9 @@ body {
   }
   
   .back{
-    position: absolute;
-    top: 20%;
-  
-    left: 0.5%;
+    position: absolute!important;
+    top: 20% !important;
+    left: 0.5% !important;
   }
   
   .form h2 {
