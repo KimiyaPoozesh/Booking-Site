@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Admin Panel</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
     <link
@@ -32,7 +33,7 @@
             </li>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="../Main/index.html">
                 <div class="d-flex flex-column align-items-center">
                   <i class='bx bx-cart-add' style='color:#ffffff' ></i>
                   <span>Buy Ticket</span>
@@ -121,7 +122,7 @@
       <div class="container plane">
         <div class="row justify-content-center">
           <div class="col-md-6">
-            <form class="form-inline">
+            <form class="form-inline" id="plane-ticket">
               <div class="form-group">
                 <label for="name" style="margin: 0.5rem 2rem 0 2rem"
                   >Origin: </label
@@ -148,22 +149,22 @@
                 />
               </div>
               <div class="form-group">
-                <label for="Departure" style="margin: 0.5rem 2rem 0 2rem"
-                  >Departure:
+                <label for="Airline" style="margin: 0.5rem 2rem 0 2rem"
+                  >Airline:
                 </label>
                 <input
-                  type="number"
+                  type="text"
                   class="form-control"
-                  id="Departure"
-                  name="Departure"
+                  id="Airline"
+                  name="Airline"
                 />
               </div>
               <div class="form-group">
                 <label for="Arrival" style="margin: 0.5rem 2rem 0 2rem"
-                  >Arrival: </label
+                  >ArrivalTime: </label
                 >
                 <input
-                  type="tel"
+                  type="text"
                   class="form-control"
                   id="Arrival"
                   style="margin-right: 1rem"
@@ -172,11 +173,24 @@
                 />
               </div>
               <div class="form-group">
+                <label for="Departure" style="margin: 0.5rem 2rem 0 2rem"
+                  >DepartureTime: </label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Departure"
+                  style="margin-right: 1rem"
+                  name="Departure"
+                  
+                />
+              </div>
+              <div class="form-group">
                 <label for="Passengers" style="margin: 0.5rem 2rem 0 2rem"
                   >Passengers: </label
                 >
                 <input
-                  type="text"
+                  type="number"
                   class="form-control"
                   id="Passengers"
                   name="Passengers"
@@ -188,7 +202,7 @@
                   >Terminal Number:
                 </label>
                 <input
-                  type="Terminal"
+                  type="number"
                   class="form-control"
                   id="Terminal"
                   name="Terminal"
@@ -201,7 +215,7 @@
                   >Flight Number:
                 </label>
                 <input
-                  type="Flight"
+                  type="number"
                   class="form-control"
                   id="Flight"
                   name="Flight"

@@ -63,6 +63,10 @@
       <form action="" class="form" id="signup-form">
         <h1>Sign Up</h1>
         <div class="input-group">
+          <input type="name" name="name" id="name" required />
+          <label for="name">Name</label>
+        </div>
+        <div class="input-group">
           <input type="number" name="phoneNumber" id="phoneNumber" required />
           <label for="phoneNumber">Phone Number</label>
         </div>
@@ -84,7 +88,7 @@
           <label for="passwordConfirmation">Confirm Password</label>
         </div>
         <p style="color: #ffff" id="strength"></p>
-        <button class="submit-btn" onclick="location.href='../profile/index.html'">Sign Up</button>
+        <button class="submit-btn" >Sign Up</button>
       </form>
     </div>
     <script src="script.js"></script>
@@ -103,14 +107,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script>
-      const form = document.getElementById('signup-form');
-      form.addEventListener('submit', function(event) {
-        event.preventDefault();
-        // Perform form validation and submit to server here
-        // If sign-up is successful, redirect to local HTML page using window.location.href
-        window.location.href = '../Profile/index.html';
-      });
-    </script>
+    
   </body>
 </html>

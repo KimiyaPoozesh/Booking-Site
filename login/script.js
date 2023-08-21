@@ -1,7 +1,11 @@
 
 const backButton = document.querySelector('.back');
+const form = document.querySelector('.form');
+const nameInput = document.querySelector('#name');
+const passwordInput = document.querySelector('#password');
 
-
+const name = nameInput.value;
+const password = passwordInput.value;
 function validateForm() {
     // Get the form inputs
     var emailOrPhoneInput = document.getElementById("inputField");
@@ -28,7 +32,42 @@ function validateForm() {
 
   backButton.addEventListener('click', () => {
     window.history.back();
-    
   });
+
+
+
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const email = nameInput.value;
+  const password = passwordInput.value;
+  const payload = { email, password };
+  const payloadJson = JSON.stringify(payload);
+
+  fetch('http://localhost:3000/api/users/sign-in', {
+    method: 'POST',
+    mode: 'cors',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: payloadJson
+  })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(response.statusText);
+      }
+      return response.json(); // Parse the response body as JSON
+    })
+    .then(data => {
+      const token = data.token; // Extract the token value from the parsed JSON object
+      localStorage.setItem('authToken', token); // Store the token value in local storage
+      console.log('Token:', token);
+      window.location.href = '../profile/index.html';
+    })
+    .catch(error => {
+      alert(error);
+    });
+});
   
   
